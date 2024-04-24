@@ -68,13 +68,14 @@
     </style>
   </head>
   <body>
+    <!-- navbar -->
     <div
       class="pr-5 absolute z-[100] w-full top-0 left-0 flex bg-white justify-between items-center section-container left-[50%] translate-x-[-50%]"
     >
       <h1 class="text-2xl px-5 py-8 font-black bg-black h-full text-white">
         TranvelLand
       </h1>
-      <div class="flex items-center gap-7">
+      <div class="items-center gap-7 lg:flex hidden">
         <nav>
           <ul class="flex gap-10 items-center">
             <li>
@@ -101,7 +102,22 @@
           Book Now
         </button>
       </div>
+      <div class="lg:hidden flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M4 17.27v-1h16v1zm0-4.77v-1h16v1zm0-4.77v-1h16v1z"
+          />
+        </svg>
+        <p>MENU</p>
+      </div>
     </div>
+    <!-- hero section -->
     <div
       class="h-[750px] relative bg-[url('https://preview.colorlib.com/theme/traveland/images/bg_1.jpg.webp')] bg-cover bg-fixed"
     >
@@ -109,15 +125,20 @@
       <div
         class="section-container relative z-[20] flex justify-center flex-col items-end h-full w-full"
       >
-        <h1 class="text-white w-[60%] pt-14 text-7xl font-black">
+        <h1
+          class="text-white md:w-[60%] sm:px-0 px-3 w-full pt-14 lg:text-7xl md:text-5xl text-4xl font-black"
+        >
           Be a Traveler not a Tourist
         </h1>
-        <p class="text-white tracking-wider pt-10 text-[22px] w-[60%]">
+        <p
+          class="text-white sm:px-0 px-3 tracking-wider pt-10 text-[22px] md:w-[60%] w-full"
+        >
           Travel to the any corner of the world, without going around in circles
         </p>
       </div>
     </div>
-    <div class="section-container w-full mt-40">
+    <!-- best places to travel -->
+    <div class="section-container sm:px-0 px-3 w-full mt-40">
       <h1 class="text-center text-[40px] text-[#333333] font-black">
         Best Place To Travel
       </h1>
@@ -125,7 +146,9 @@
         Far far away, behind the word mountains, far from the countries Vokalia
         and Consonantia
       </p>
-      <div class="grid gap-5 mb-40 grid-cols-4 mt-20">
+      <div
+        class="grid lg:gap-5 gap-8 mb-40 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-20"
+      >
         <div>
           <div class="relative">
             <img
@@ -460,9 +483,10 @@
         </div>
       </div>
     </div>
-    <div class="bg-[#F8F9FA] py-[150px]">
+    <!-- services -->
+    <div class="bg-[#F8F9FA] sm:px-0 px-3 py-[150px]">
       <div class="section-container w-full">
-        <div class="grid gap-10 grid-cols-4">
+        <div class="grid gap-10 sm:grid-cols-4 grid-cols-1">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -586,23 +610,26 @@
         </div>
       </div>
     </div>
+    <!-- about travel -->
     <div>
-      <div class="section-container w-full">
-        <div class="flex gap-14 items-center">
-          <div class="basis-[50%]">
+      <div class="section-container sm:px-0 px-3 w-full">
+        <div class="flex gap-14 sm:flex-row flex-col items-center">
+          <div class="sm:basis-[50%]">
             <img
               src="https://preview.colorlib.com/theme/traveland/images/about.jpg.webp"
               alt=""
-              class="w-full h-[680px]"
+              class="w-full sm:h-[680px] h-[420px]"
             />
           </div>
-          <div class="basis-[50%]">
-            <h1 class="text-[39px] font-bold">About Traveland</h1>
+          <div class="sm:basis-[50%]">
+            <h1 class="sm:text-[39px] text-[30px] font-bold">
+              About Traveland
+            </h1>
             <p class="text-[#A7A7A7] text-lg py-6">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia
             </p>
-            <div class="grid grid-cols-2 gap-5">
+            <div class="grid sm:grid-cols-2 grid-cols-1 gap-5">
               <div
                 class="rounded-md rounded-md bg-[#F8F9FA] py-16 flex items-center justify-center flex-col"
               >
@@ -632,15 +659,20 @@
         </div>
       </div>
     </div>
-    <div class="section-container w-full mt-40">
-      <h1 class="text-center text-[40px] text-[#333333] font-black">
+    <!-- hotel & Restaurant -->
+    <div class="section-container sm:px-0 px-3 w-full mt-40">
+      <h1
+        class="text-center sm:text-[40px] text-[32px] text-[#333333] font-black"
+      >
         Hotel & Restaurant
       </h1>
       <p class="text-center text-lg text-[#A7A7A7] pt-5">
         Far far away, behind the word mountains, far from the countries Vokalia
         and Consonantia
       </p>
-      <div class="grid gap-10 mb-40 grid-cols-3 mt-20">
+      <div
+        class="grid gap-10 mb-40 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-20"
+      >
         <div>
           <div class="relative">
             <img
@@ -892,18 +924,21 @@
         </div>
       </div>
     </div>
+    <!-- thing you should know -->
     <div>
-      <div class="section-container w-full">
-        <div class="flex gap-14 flex-row-reverse items-center">
+      <div class="section-container sm:px-0 px-3 w-full">
+        <div
+          class="flex gap-14 sm:flex-row-reverse flex-col mb-32 lg:items-center"
+        >
           <div class="basis-[50%]">
             <img
               src="https://preview.colorlib.com/theme/traveland/images/about-1.jpg.webp"
               alt=""
-              class="w-full h-[700px]"
+              class="w-full lg:h-[700px] h-[350px]"
             />
           </div>
           <div class="basis-[50%]">
-            <h1 class="text-[50px] leading-[1.2] font-bold">
+            <h1 class="lg:text-[50px] text-[35px] leading-[1.2] font-bold">
               Things to Know Before TravelandTraveling to other Places
             </h1>
             <p class="text-[#A7A7A7] text-lg py-8">
@@ -935,14 +970,17 @@
         </div>
       </div>
     </div>
+    <!-- feedbacks -->
     <div
       class="relative z-[20] bg-[url('https://preview.colorlib.com/theme/traveland/images/bg_1.jpg.webp')] bg-cover"
     >
       <div
         class="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.8)] z-[8]"
       ></div>
-      <div class="section-container w-full z-[10] relative">
-        <h1 class="text-center text-white text-5xl pt-32 pb-24 font-bold">
+      <div class="section-container sm:px-0 px-3 w-full z-[10] relative">
+        <h1
+          class="text-center text-white sm:text-5xl text-4xl pt-32 pb-24 font-bold"
+        >
           Happy Traveler Says
         </h1>
         <div>
@@ -950,8 +988,8 @@
             class="relative bg-cover bg-[url('https://preview.colorlib.com/theme/traveland/images/traveler-1.jpg.webp')] py-16 px-14"
           >
             <div class="overlay2 absolute top-0 left-0 right-0 bottom-0"></div>
-            <div class="w-[45%] relative z-[10] text-white">
-              <p class="text-3xl tracking-wider leading-[1.8]">
+            <div class="sm:w-[45%] w-full relative z-[10] text-white">
+              <p class="sm:text-3xl text-lg tracking-wider leading-[1.8]">
                 Far far away, behind the world mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.
               </p>
@@ -964,12 +1002,15 @@
         </div>
       </div>
     </div>
+    <!-- recent stories -->
     <div>
-      <div class="section-container w-full mt-20 mb-36">
-        <h1 class="text-center text-[40px] mb-20 text-[#333333] font-black">
+      <div class="section-container sm:px-0 px-3 w-full mt-20 mb-36">
+        <h1
+          class="text-center sm:text-[40px] text-[32px] mb-20 text-[#333333] font-black"
+        >
           Recent Stories
         </h1>
-        <div class="grid gap-10 grid-cols-3">
+        <div class="grid gap-10 sm:grid-cols-3 grid-cols-1">
           <div>
             <div class="relative">
               <img
@@ -985,7 +1026,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-2xl pt-3 font-bold">
+            <p class="lg:text-2xl text-xl pt-3 font-bold">
               Why Lead Generation is Key for Business Growth
             </p>
           </div>
@@ -1004,7 +1045,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-2xl pt-3 font-bold">
+            <p class="lg:text-2xl text-xl pt-3 font-bold">
               Why Lead Generation is Key for Business Growth
             </p>
           </div>
@@ -1023,20 +1064,23 @@
                 </div>
               </div>
             </div>
-            <p class="text-2xl pt-3 font-bold">
+            <p class="lg:text-2xl text-xl pt-3 font-bold">
               Why Lead Generation is Key for Business Growth
             </p>
           </div>
         </div>
       </div>
     </div>
+    <!-- subscribe -->
     <div
       class="h-[400px] mb-52 relative bg-[url('https://preview.colorlib.com/theme/traveland/images/bg_1.jpg.webp')] bg-cover"
     >
       <div
-        class="w-[60%] rounded-sm absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%] py-16 bg-white"
+        class="xl:w-[60%] lg:w-[70%] sm:w-[80%] w-full rounded-sm absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%] py-16 bg-white"
       >
-        <h1 class="text-center text-4xl tracking-wider font-black">
+        <h1
+          class="text-center text-[#333333] text-4xl tracking-wider font-black"
+        >
           Subcribe to our Newsletter
         </h1>
         <div
@@ -1051,6 +1095,167 @@
             Subscribe
           </button>
         </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="bg-[#333333] text-white">
+      <div class="section-container sm:px-0 px-3 w-full">
+        <div class="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-5 pt-24">
+          <div>
+            <h1 class="text-xl font-medium pb-8">Traveland</h1>
+            <p class="text-[17px] leading-[1.8] pb-10 text-[#BDBFB9]">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
+            <div class="flex items-center gap-5">
+              <div
+                class="w-[50px] h-[50px] bg-[rgba(255,255,255,0.05)] flex items-center justify-center rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"
+                  />
+                </svg>
+              </div>
+              <div
+                class="w-[50px] h-[50px] bg-[rgba(255,255,255,0.05)] flex items-center justify-center rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="w-[50px] h-[50px] bg-[rgba(255,255,255,0.05)] flex items-center justify-center rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="sm:pl-10">
+            <h1 class="text-xl font-medium pb-8">Infromation</h1>
+            <ul class="flex flex-col gap-4 text-[17px] text-[#777B80]">
+              <li>
+                <a href="#">Online Enquiry</a>
+              </li>
+              <li>
+                <a href="#">General Enquiries</a>
+              </li>
+              <li>
+                <a href="#">Booking Conditions</a>
+              </li>
+              <li>
+                <a href="#">Privacy & Policy</a>
+              </li>
+              <li>
+                <a href="#">Refund Policy</a>
+              </li>
+              <li>
+                <a href="#">Call Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="text-xl font-medium pb-8">Experience</h1>
+            <ul class="flex flex-col gap-4 text-[17px] text-[#777B80]">
+              <li>
+                <a href="#">Adventure</a>
+              </li>
+              <li>
+                <a href="#">Hotel & Restaurant</a>
+              </li>
+              <li>
+                <a href="#">Beach</a>
+              </li>
+              <li>
+                <a href="#">Nature</a>
+              </li>
+              <li>
+                <a href="#">Camping</a>
+              </li>
+              <li>
+                <a href="#">Party</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="text-xl font-medium pb-8">Have a question?</h1>
+            <div class="flex gap-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                class="shrink-0"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
+                />
+              </svg>
+              <p class="text-[17px] text-[#BDBFB9]">
+                203 Fake St. Mountain View, San Francisco, California, USA
+              </p>
+            </div>
+            <div class="flex gap-5 my-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                class="shrink-0"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3"
+                />
+              </svg>
+              <p class="text-[17px] text-[#BDBFB9]">+2 392 3929 210</p>
+            </div>
+            <div class="flex gap-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                class="shrink-0"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.312t.1-.413q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037"
+                />
+              </svg>
+              <p class="text-[17px] text-[#BDBFB9]">testmailtravel@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-[17px] pt-20 pb-32 text-[#BDBFB9]">
+          Copyright ©2024 All rights reserved | This template is made with by
+          Colorlib
+        </p>
       </div>
     </div>
   </body>
